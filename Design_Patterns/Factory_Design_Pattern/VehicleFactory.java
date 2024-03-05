@@ -1,6 +1,6 @@
 package Design_Patterns.Factory_Design_Pattern;
 
-class GetVehicleType {
+class VehicleFactoryType {
 
     public vehicle getVehicle(String vehicleType) {
 
