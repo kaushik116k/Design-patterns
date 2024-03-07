@@ -33,3 +33,17 @@ class WinFactory implements IFactory {
     }
     
 }
+
+class LinuxFactory implements IFactory {
+
+    @Override
+    public Button createButton() {
+        return new LinuxButton();
+    }
+
+    @Override
+    public TextBox creaTextBox() {
+        return new LinuxTextBox();
+    }
+    
+}

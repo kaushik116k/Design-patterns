@@ -21,3 +21,12 @@ class WinButton implements Button {
     }
     
 }
+
+class LinuxButton implements Button {
+
+    @Override
+    public void press() {
+        System.out.println("Linux Button is pressed");
+    }
+
+}

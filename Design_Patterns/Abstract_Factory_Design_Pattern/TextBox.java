@@ -21,3 +21,12 @@ class WinTextBox implements TextBox {
     }
 
 }
+
+class LinuxTextBox implements TextBox {
+
+    @Override
+    public void show() {
+        System.out.println("show linux text box");
+    }
+
+}
