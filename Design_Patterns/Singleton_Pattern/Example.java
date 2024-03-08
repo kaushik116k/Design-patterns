@@ -20,7 +20,7 @@ class Logger {
     }
 }
 
-public class Main {
+public class Example {
     public static void main(String[] args) {
         Logger logger1 = Logger.createInstance();
         logger1.LogMessage("This msg is from user 1");
