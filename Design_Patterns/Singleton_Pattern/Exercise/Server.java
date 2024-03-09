@@ -15,9 +15,15 @@ class Server {
 
 
     /// Lazy initialization of the singleton instance
+    /// make it usable in a multithreaded application
     public static Server getInstance() {
+        
         if(serverInstance == null) {
-            serverInstance = new Server();
+            synchronized (Server.class) {
+                if(serverInstance == null) {
+                    serverInstance = new Server();
+                }
+            }
         }
 
         return serverInstance;
